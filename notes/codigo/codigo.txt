@@ -1,0 +1,22 @@
+// 1. Verifique se a variável is_fired existe (evita erro de leitura)
+if (variable_instance_exists(id, "is_fired") && is_fired) {
+    is_fired = false;
+    alarm[1] = 15;
+
+    // 2. Use o nome da Layer fixo para testar (garante que não seja erro de ID)
+    var _lay = layer_get_id("Instances"); 
+    if (_lay == -1) _lay = layer; // Fallback caso a camada "Instances" não exista
+
+    // 3. Criação segura
+    var _tiro = instance_create_layer(x, y, _lay, oBullet);
+
+    // 4. Verifique se a instância foi realmente criada antes de usar o with
+    if (instance_exists(_tiro)) {
+        var _mouse_dir = point_direction(x, y, mouse_x, mouse_y);
+        with(_tiro) {
+            direction = _mouse_dir;
+            speed = 10;
+            image_angle = _mouse_dir;
+        }
+    }
+}

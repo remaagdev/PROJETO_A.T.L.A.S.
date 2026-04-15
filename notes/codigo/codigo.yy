@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"codigo",
+  "name":"codigo",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/scripts.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
