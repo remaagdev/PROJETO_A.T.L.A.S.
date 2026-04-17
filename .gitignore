@@ -1,0 +1,8 @@
+# Pastas temporárias do GameMaker
+configs/
+export/
+options/main/inherited/
+scripts/*.gml.d
+.DS_Store
+*.tmp
+*.log
