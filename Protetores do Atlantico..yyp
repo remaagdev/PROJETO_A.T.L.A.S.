@@ -46,6 +46,7 @@
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
     {"id":{"name":"sGarrafa_Strip1","path":"sprites/sGarrafa_Strip1/sGarrafa_Strip1.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+    {"id":{"name":"sSaguaViva_idle","path":"sprites/sSaguaViva_idle/sSaguaViva_idle.yy",},},
     {"id":{"name":"sSaguaViva","path":"sprites/sSaguaViva/sSaguaViva.yy",},},
     {"id":{"name":"sSubmarino_idle","path":"sprites/sSubmarino_idle/sSubmarino_idle.yy",},},
     {"id":{"name":"sSubmarino_walk","path":"sprites/sSubmarino_walk/sSubmarino_walk.yy",},},

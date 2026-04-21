@@ -22,6 +22,7 @@
     {"name":"sBullet","order":2,"path":"sprites/sBullet/sBullet.yy",},
     {"name":"sEnemy","order":3,"path":"sprites/sEnemy/sEnemy.yy",},
     {"name":"sGarrafa_Strip1","order":1,"path":"sprites/sGarrafa_Strip1/sGarrafa_Strip1.yy",},
+    {"name":"sSaguaViva_idle","order":3,"path":"sprites/sSaguaViva_idle/sSaguaViva_idle.yy",},
     {"name":"sSaguaViva","order":2,"path":"sprites/sSaguaViva/sSaguaViva.yy",},
     {"name":"sSubmarino_idle","order":2,"path":"sprites/sSubmarino_idle/sSubmarino_idle.yy",},
     {"name":"sSubmarino_walk","order":1,"path":"sprites/sSubmarino_walk/sSubmarino_walk.yy",},
