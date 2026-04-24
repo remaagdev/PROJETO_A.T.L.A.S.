@@ -49,7 +49,7 @@
     ],
     "top":0,
   },
-  "origin":0,
+  "origin":9,
   "parent":{
     "name":"Inimigos",
     "path":"folders/sprites/Inimigos.yy",
