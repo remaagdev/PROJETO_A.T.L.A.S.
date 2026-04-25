@@ -6,3 +6,4 @@ scripts/*.gml.d
 .DS_Store
 *.tmp
 *.log
+* text=auto

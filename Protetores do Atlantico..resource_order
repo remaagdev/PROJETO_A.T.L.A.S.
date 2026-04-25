@@ -1,18 +1,20 @@
 {
   "FolderOrderSettings":[
     {"name":"objects","order":1,"path":"folders/objects.yy",},
+    {"name":"Enemy","order":4,"path":"folders/objects/Enemy.yy",},
     {"name":"scripts","order":3,"path":"folders/scripts.yy",},
     {"name":"sprites","order":2,"path":"folders/sprites.yy",},
-    {"name":"Tilesets","order":7,"path":"folders/sprites/Tilesets.yy",},
     {"name":"Inimigos","order":6,"path":"folders/sprites/Inimigos.yy",},
     {"name":"parallax","order":4,"path":"folders/sprites/parallax.yy",},
     {"name":"submarino","order":5,"path":"folders/sprites/submarino.yy",},
+    {"name":"Tilesets","order":7,"path":"folders/sprites/Tilesets.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"codigo","order":1,"path":"notes/codigo/codigo.yy",},
     {"name":"oBlock","order":1,"path":"objects/oBlock/oBlock.yy",},
     {"name":"oBullet","order":2,"path":"objects/oBullet/oBullet.yy",},
     {"name":"oEnemy","order":3,"path":"objects/oEnemy/oEnemy.yy",},
+    {"name":"oSaguaViva","order":5,"path":"objects/oSaguaViva/oSaguaViva.yy",},
     {"name":"bgAbismo_2","order":1,"path":"sprites/bgAbismo_2/bgAbismo_2.yy",},
     {"name":"bgFundo_1","order":2,"path":"sprites/bgFundo_1/bgFundo_1.yy",},
     {"name":"bgFundo_2","order":3,"path":"sprites/bgFundo_2/bgFundo_2.yy",},

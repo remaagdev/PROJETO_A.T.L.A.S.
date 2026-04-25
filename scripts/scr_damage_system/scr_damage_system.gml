@@ -11,5 +11,5 @@ function apply_damage(_amount, _object){
 	_object.is_invincible = true;
 	_object.alarm[0] = _object.inv_duration;
 	
-	show_debug_message(string(id) + " levou " + string(_amount) + " de dano");
+	show_debug_message(_object.hp_current);
 }
