@@ -24,7 +24,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"Protetores do Atlantico.",
   "resources":[
@@ -46,8 +46,9 @@
     {"id":{"name":"sBlock","path":"sprites/sBlock/sBlock.yy",},},
     {"id":{"name":"sBoiaPesca_Strip1","path":"sprites/sBoiaPesca_Strip1/sBoiaPesca_Strip1.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
+    {"id":{"name":"sCanudo_idle","path":"sprites/sCanudo_idle/sCanudo_idle.yy",},},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
-    {"id":{"name":"sGarrafa_Strip1","path":"sprites/sGarrafa_Strip1/sGarrafa_Strip1.yy",},},
+    {"id":{"name":"sGarrafa_idle","path":"sprites/sGarrafa_idle/sGarrafa_idle.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sSaguaViva_idle","path":"sprites/sSaguaViva_idle/sSaguaViva_idle.yy",},},
     {"id":{"name":"sSaguaViva","path":"sprites/sSaguaViva/sSaguaViva.yy",},},
