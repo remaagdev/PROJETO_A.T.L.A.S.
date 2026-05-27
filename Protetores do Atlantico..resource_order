@@ -4,10 +4,12 @@
     {"name":"Enemy","order":4,"path":"folders/objects/Enemy.yy",},
     {"name":"scripts","order":3,"path":"folders/scripts.yy",},
     {"name":"sprites","order":2,"path":"folders/sprites.yy",},
+    {"name":"Telas","order":9,"path":"folders/sprites/Telas.yy",},
     {"name":"Inimigos","order":6,"path":"folders/sprites/Inimigos.yy",},
     {"name":"parallax","order":4,"path":"folders/sprites/parallax.yy",},
     {"name":"submarino","order":5,"path":"folders/sprites/submarino.yy",},
     {"name":"Tilesets","order":7,"path":"folders/sprites/Tilesets.yy",},
+    {"name":"upgrades","order":8,"path":"folders/sprites/upgrades.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"codigo","order":1,"path":"notes/codigo/codigo.yy",},
@@ -30,5 +32,6 @@
     {"name":"sSaguaViva","order":2,"path":"sprites/sSaguaViva/sSaguaViva.yy",},
     {"name":"sSubmarino_idle","order":2,"path":"sprites/sSubmarino_idle/sSubmarino_idle.yy",},
     {"name":"sSubmarino_walk","order":1,"path":"sprites/sSubmarino_walk/sSubmarino_walk.yy",},
+    {"name":"sUpgrades_idle","order":1,"path":"sprites/sUpgrades_idle/sUpgrades_idle.yy",},
   ],
 }
