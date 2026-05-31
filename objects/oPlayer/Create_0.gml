@@ -18,7 +18,12 @@ shield = new Stat("Armadura do Submarino", 0);																										// Armad
 
 damage = new Stat("Dano do Submarino", 10);																										// Dano por disparo base
 
-cadencyFire = new Stat("Cadencia de tiros do Submarino", 2);																			// Quantidade de disparos realizados por tiro base
+cadencyFire = new Stat("Cadencia de tiros do Submarino", 0.5);																			// Tempo de cadencia entre os disparos realizados 
+
+bulletFire = new Stat("Quantidade de Tiros", 2);																										// Quantidade de tiros realizados por disparo
+qBullet = 0;																																												// Variavel para ser usada no sistema de disparos, armazena quantos disparos submarino possui
+
+coldownFire = new Stat("Coldown de Disparo", 2);																									// Tempo de coldown entre novos disparos
 
 invencibility = new Stat("Duraçao Invencibilidade", 60);																						// Tempo em que fica invuneravel
 
@@ -26,10 +31,12 @@ colisionDamage = new Stat("Dano de Colisao", 5);																										// Col
 
 fisherLuck = new Stat("Sorte do Pescador", 0.1);																											// SORTE DO PESCADOR
 // -----------------------// -----------------------
-//				GETTERS
+//						GETTERS
 // -----------------------// -----------------------
-is_vunerable = true;
-is_fired = true;
+is_vunerable = true;																																								// True = Objeto está sucetivel a receber dano																					
+can_shooting = true;																																							// True = Objeto pode atirar
+is_cadency = true;																																									// Ture = Objeto tem cadencia para disparar projetil
+is_coldown = false;																																								// False = Não está em coldown para disparar
 
 
 

@@ -1,3 +1,7 @@
+
+// -----------------------// -----------------------
+//				MOVIMENTO E COLISÃO
+// -----------------------// -----------------------
 // Inputs para identificar a direçao em que o player quer se locomover
 // outputs = 1, 0, -1
 var _xInput = keyboard_check(ord("D"))  - keyboard_check(ord("A"));
@@ -63,6 +67,45 @@ if (place_meeting(x, y + hSpd, oBlock)) {
 // aplica o movimento ao personagem
 y += hSpd;
 
-/////////////////////////////////////////////// calculo de hp e oxigenio ///////////////////////////////////////////////////////////////////
+// -----------------------// -----------------------
+//						DISPAROS
+// -----------------------// -----------------------
+var _shoot_click = mouse_check_button_pressed(mb_left);															// Detecta o click do mouse
+
+// Verifica se o player clicou e se pode atirar para realizar os disparos
+if (_shoot_click && can_shooting) {
+	can_shooting = false;
+	
+	qBullet = bulletFire.currentValue;																								// Pega inamicamente a quantia de balas
+	var _tiro = instance_create_layer(x, y, "Instances", oBullet);														// Cria a instancia do tiro
+	var _dir = point_direction(x + 16, y, mouse_x, mouse_y);															// Direção do mouse 
+	
+	with(_tiro) {
+		direction = _dir;
+		speed = 10;
+		image_angle = _dir;
+	}
+	
+	qBullet--;																																					// Diminui quantia de tiros que possui
+	
+	// CHECAGEM DE CONTINUIDADE
+	if (qBullet> 0) {
+		// Converte o tempo de cadencia em frames
+		alarm[1] = cadencyFire.currentValue * game_get_speed(gamespeed_fps);
+	} else {
+		alarm[2] = coldownFire.currentValue * game_get_speed(gamespeed_fps);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
