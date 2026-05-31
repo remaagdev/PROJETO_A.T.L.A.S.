@@ -4,7 +4,7 @@
   "name":"codigo",
   "parent":{
     "name":"scripts",
-    "path":"folders/scripts.yy",
+    "path":"folders/sprites/scripts.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

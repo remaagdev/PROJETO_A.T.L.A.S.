@@ -6,7 +6,7 @@
   "name":"debug",
   "parent":{
     "name":"scripts",
-    "path":"folders/scripts.yy",
+    "path":"folders/sprites/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
