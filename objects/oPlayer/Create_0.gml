@@ -2,8 +2,11 @@
 //				 STATUS FISICOS
 // -----------------------// -----------------------
 oxygen = new Stat("Oxigenio do Submarino", 30);																							   		// cilindro de oxigenio, timer de quanto tempo o submarifo fica submerso base
+qOxygen = oxygen.currentValue;																																	// Variavel para armazenar valor de oxigenio atual
+alarm[3] = 1 * game_get_speed(gamespeed_fps);																									// Começa a diminuir a cada segundo a quantia de oxigênio
 
-hp =  new Stat("Durabilidade do Submarino", 100);																								// Durabilidade, pontos de vida base
+durability =  new Stat("Durabilidade do Submarino", 100);																								// Durabilidade, pontos de vida base
+hp = durability;
 
 velocity = new Stat ("Velocidade do Subimarino", 3);																								// Velocidade de navegaçao por segundo base
 hSpd =  0;
@@ -30,6 +33,7 @@ invencibility = new Stat("Duraçao Invencibilidade", 60);																						/
 colisionDamage = new Stat("Dano de Colisao", 5);																										// Colisao contra paredes
 
 fisherLuck = new Stat("Sorte do Pescador", 0.1);																											// SORTE DO PESCADOR
+
 // -----------------------// -----------------------
 //						GETTERS
 // -----------------------// -----------------------
@@ -38,8 +42,8 @@ can_shooting = true;																																							// True = Objeto pode
 is_cadency = true;																																									// Ture = Objeto tem cadencia para disparar projetil
 is_coldown = false;																																								// False = Não está em coldown para disparar
 
-
-
-// sprites states
+// -----------------------// -----------------------
+//						SPRITE STATES
+// -----------------------// -----------------------
 spr_idle = sSubmarino_idle;
 spr_walk = sSubmarino_walk;

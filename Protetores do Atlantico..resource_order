@@ -1,8 +1,10 @@
 {
   "FolderOrderSettings":[
     {"name":"objects","order":1,"path":"folders/objects.yy",},
+    {"name":"rooms","order":4,"path":"folders/rooms.yy",},
     {"name":"scripts","order":3,"path":"folders/scripts.yy",},
     {"name":"sprites","order":2,"path":"folders/sprites.yy",},
+    {"name":"others","order":7,"path":"folders/sprites/others.yy",},
     {"name":"Inimigos","order":6,"path":"folders/sprites/Inimigos.yy",},
     {"name":"parallax","order":4,"path":"folders/sprites/parallax.yy",},
     {"name":"submarino","order":5,"path":"folders/sprites/submarino.yy",},
@@ -10,11 +12,14 @@
   "ResourceOrderSettings":[
     {"name":"atualizations","order":2,"path":"notes/atualizations/atualizations.yy",},
     {"name":"codigo","order":1,"path":"notes/codigo/codigo.yy",},
+    {"name":"oBioCoin","order":6,"path":"objects/oBioCoin/oBioCoin.yy",},
     {"name":"oBlock","order":1,"path":"objects/oBlock/oBlock.yy",},
     {"name":"oBullet","order":2,"path":"objects/oBullet/oBullet.yy",},
     {"name":"oCamera","order":4,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oController","order":5,"path":"objects/oController/oController.yy",},
     {"name":"oEnemy","order":3,"path":"objects/oEnemy/oEnemy.yy",},
+    {"name":"rResults","order":1,"path":"rooms/rResults/rResults.yy",},
+    {"name":"rUpgrades","order":2,"path":"rooms/rUpgrades/rUpgrades.yy",},
     {"name":"debug","order":4,"path":"scripts/debug/debug.yy",},
     {"name":"scr_upgrade_stats","order":3,"path":"scripts/scr_upgrade_stats/scr_upgrade_stats.yy",},
     {"name":"bgAbismo_2","order":1,"path":"sprites/bgAbismo_2/bgAbismo_2.yy",},

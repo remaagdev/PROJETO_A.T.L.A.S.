@@ -1,4 +1,3 @@
-
 // -----------------------// -----------------------
 //				MOVIMENTO E COLISÃO
 // -----------------------// -----------------------
@@ -90,16 +89,27 @@ if (_shoot_click && can_shooting) {
 	
 	// CHECAGEM DE CONTINUIDADE
 	if (qBullet> 0) {
-		// Converte o tempo de cadencia em frames
+		// Converte o tempo de cadencia e coldown em frames
 		alarm[1] = cadencyFire.currentValue * game_get_speed(gamespeed_fps);
 	} else {
 		alarm[2] = coldownFire.currentValue * game_get_speed(gamespeed_fps);
 	}
 }
 
+// -----------------------// -----------------------
+//			VICTORY & DEFEAT
+// -----------------------// -----------------------
+// Envia para a tela de resultados (recebe 100% dos ganhos)
+if (qOxygen == 0) {
+		global.return_reason = "oxygen";
+		room_goto(rResults);
+}
 
-
-
+// Envia para a tela de resultaos (Recebe 50% dos ganhos)
+if (hp <= 0) {
+		global.return_reason = "dead";
+		room_goto(rResults);
+}
 
 
 
