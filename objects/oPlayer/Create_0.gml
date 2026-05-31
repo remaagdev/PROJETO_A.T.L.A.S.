@@ -1,24 +1,38 @@
-// Variaveiss
-oxygen_base = 100;
-oxygen_current = oxygen_base;
+// -----------------------// -----------------------
+//				 STATUS FISICOS
+// -----------------------// -----------------------
+oxygen = new Stat("Oxigenio do Submarino", 30);																							   		// cilindro de oxigenio, timer de quanto tempo o submarifo fica submerso base
 
-hp_base =  100;
-hp_current = hp_base;
+hp =  new Stat("Durabilidade do Submarino", 100);																								// Durabilidade, pontos de vida base
 
-speed_base = 3;
-speed_current = speed_base;
+velocity = new Stat ("Velocidade do Subimarino", 3);																								// Velocidade de navegaçao por segundo base
 hSpd =  0;
 wSpd = 0;
 
-// States
-shield = 0;
-damage = 5;
+resistPresurre = new Stat("Resistencia a Pressao do Submarino", 763);															// Ressistencia a pressao de profundidade em metros(px)
 
-//geteers
-is_invincible = false;
+// -----------------------// -----------------------
+//				STATUS COMBATE
+// -----------------------// -----------------------
+shield = new Stat("Armadura do Submarino", 0);																										// Armadura do submarino
+
+damage = new Stat("Dano do Submarino", 10);																										// Dano por disparo base
+
+cadencyFire = new Stat("Cadencia de tiros do Submarino", 2);																			// Quantidade de disparos realizados por tiro base
+
+invencibility = new Stat("Duraçao Invencibilidade", 60);																						// Tempo em que fica invuneravel
+
+colisionDamage = new Stat("Dano de Colisao", 5);																										// Colisao contra paredes
+
+fisherLuck = new Stat("Sorte do Pescador", 0.1);																											// SORTE DO PESCADOR
+// -----------------------// -----------------------
+//				GETTERS
+// -----------------------// -----------------------
+is_vunerable = true;
 is_fired = true;
-inv_duration = 60;
+
 
 
 // sprites states
-spr_walk = "sSubimarino_walk";
+spr_idle = sSubmarino_idle;
+spr_walk = sSubmarino_walk;

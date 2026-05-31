@@ -1,1 +1,2 @@
-is_invincible = false;
+/// @description Vulnerabilidade
+is_vunerable = true;

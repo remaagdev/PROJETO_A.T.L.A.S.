@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"atualizations",
+  "name":"atualizations",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/scripts.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,31 @@
+0. Loop Gameplay
+	0.1 - Tela de Derrota; Ao ter sua durabilidade reduzida a 0 - 
+	0.2 - Retorna a tela padrao; Ao ter seu tempo de oxigenio reduzido a 0 -
+
+1. Submarino
+	1.1 - Movimento; OK
+	
+	1.2 - Colisao; OK
+	1.3 - Oxigenio 
+		1.3.1 - Status e variaveis para o Oxigenio
+		1.3.1 - Fazer o submarino perder oxigenio baseado no timer
+		
+		1.3 - Mecanica de atirar
+			1.3.1 - Atira o progetil com deley no alarm[0] - 
+			1.3.2 - Criar variavel de quantidade de tiros por click - 
+			1.3.2 - Criar looping
+		
+	1.4 - Status no Create
+	1.5 - Upgrades
+	
+2. Inimigos
+	2.1 - Criar Pai oEnemy para que Filhos herdem suas caracteristicas
+		2.1.1 - Status no Create: - REV
+		2.1.1 - Inimigo e derrotado - OK
+	2.2 - Adicionar e criar objeto de cada inimigo
+	
+3. Camera
+	3.1 - Faze-la seguir o submarino
+	
+
+fazer calculo para diminuir o timer de oxigenio a cada 1 segundo

@@ -1,4 +1,5 @@
 
-if (hp_current <=  0){
-	instance_destroy(self);	
+if (hp.currentValue <=  0){
+	show_debug_message("morri");
+	instance_destroy();	
 }

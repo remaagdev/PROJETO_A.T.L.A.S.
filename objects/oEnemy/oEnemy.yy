@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sGarrafa_Strip1",
+    "path":"sprites/sGarrafa_Strip1/sGarrafa_Strip1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

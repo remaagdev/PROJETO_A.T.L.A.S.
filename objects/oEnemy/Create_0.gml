@@ -1,8 +1,10 @@
 // Create Event do oEnemy
-hp_current = 10;       // Vida do inimigo
-hp_base = 10;          // Vida máxima do inimigo
-shield = 0;            // Escudo (se não tiver, deixe 0)
-is_invincible = false; // Estado de invencibilidade
-inv_duration = 10;     // Tempo que ele fica piscando/sem tomar dano (frames)
+hp =  new Stat("Vida do Inimigo", 10);																								// Durabilidade, pontos de vida base
+
+shield = new Stat("Armadura do Inimigo", 0);																										// Armadura do inimigo
+
+is_vunerable = true; // Estado de vulnerabilidade
+
+invencibility = new Stat("Duraçao Invencibilidade", 60);																						// Tempo em que fica invuneravel
 
 iSprite = 0;
