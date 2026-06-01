@@ -6,7 +6,7 @@
   "name":"scr_damage_system",
   "parent":{
     "name":"scripts",
-    "path":"folders/sprites/scripts.yy",
+    "path":"folders/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

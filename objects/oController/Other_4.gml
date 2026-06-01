@@ -14,3 +14,5 @@ switch(room) {
 		bio_current = global.bio_collected * _bio_multi;
 		global.bio_wallet += bio_current;
 }
+
+

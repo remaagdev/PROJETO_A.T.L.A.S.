@@ -1,5 +1,6 @@
 // Create Event do oEnemy
-hp =  new Stat("Vida do Inimigo", 10);																														// Durabilidade, pontos de vida base
+durability =  new Stat("Vida do Inimigo", 10);																														// Durabilidade, pontos de vida base
+hp = durability.currentValue;
 
 shield = new Stat("Armadura do Inimigo", 0);																										// Armadura do inimigo
 

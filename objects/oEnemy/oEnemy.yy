@@ -33,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sGarrafa_idle",
+    "path":"sprites/sGarrafa_idle/sGarrafa_idle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

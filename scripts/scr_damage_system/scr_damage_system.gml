@@ -5,7 +5,7 @@ function apply_damage(_damage, _object){
 	// Calcula o dano
 	var _true_damage = max(0, _damage - _object.shield.currentValue);
 	// aplica o dano
-	_object.hp.currentValue -= _true_damage;
+	_object.hp -= _true_damage;
 	
 	// Inicia invencibilidade
 	_object.is_vunerable  = false;

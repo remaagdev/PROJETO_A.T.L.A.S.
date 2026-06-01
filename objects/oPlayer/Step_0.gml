@@ -97,6 +97,18 @@ if (_shoot_click && can_shooting) {
 }
 
 // -----------------------// -----------------------
+//				COLETA MOEDA
+// -----------------------// -----------------------
+// Verifica se há colisão entre o submarino e uma bio-coin
+var _bioCoin_colision = instance_place(x, y, oBioCoin);
+
+if (_bioCoin_colision != noone) {
+	global.bio_collected++;										// Adiciona bio-coin aos demais coletados da run
+	instance_destroy(_bioCoin_colision);
+	show_debug_message(string(global.bio_collected));
+}	
+
+// -----------------------// -----------------------
 //			VICTORY & DEFEAT
 // -----------------------// -----------------------
 // Envia para a tela de resultados (recebe 100% dos ganhos)

@@ -6,7 +6,7 @@ qOxygen = oxygen.currentValue;																																	// Variavel para 
 alarm[3] = 1 * game_get_speed(gamespeed_fps);																									// Começa a diminuir a cada segundo a quantia de oxigênio
 
 durability =  new Stat("Durabilidade do Submarino", 100);																								// Durabilidade, pontos de vida base
-hp = durability;
+hp = durability.currentValue;
 
 velocity = new Stat ("Velocidade do Subimarino", 3);																								// Velocidade de navegaçao por segundo base
 hSpd =  0;
