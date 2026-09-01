@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"log_error",
+  "name":"log_error",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/scripts.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

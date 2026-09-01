@@ -12,12 +12,12 @@
   "Folders":[
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms","folderPath":"folders/rooms.yy","name":"rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"scripts","folderPath":"folders/scripts.yy","name":"scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"sprites","folderPath":"folders/sprites.yy","name":"sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"hud","folderPath":"folders/sprites/hud.yy","name":"hud","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Inimigos","folderPath":"folders/sprites/Inimigos.yy","name":"Inimigos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"others","folderPath":"folders/sprites/others.yy","name":"others","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"parallax","folderPath":"folders/sprites/parallax.yy","name":"parallax","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"scripts","folderPath":"folders/scripts.yy","name":"scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"submarino","folderPath":"folders/sprites/submarino.yy","name":"submarino","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"telas","folderPath":"folders/sprites/telas.yy","name":"telas","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"tileset","folderPath":"folders/sprites/tileset.yy","name":"tileset","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -28,12 +28,13 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"Protetores do Atlantico.",
   "resources":[
     {"id":{"name":"atualizations","path":"notes/atualizations/atualizations.yy",},},
     {"id":{"name":"codigo","path":"notes/codigo/codigo.yy",},},
+    {"id":{"name":"log_error","path":"notes/log_error/log_error.yy",},},
     {"id":{"name":"oBioCoin","path":"objects/oBioCoin/oBioCoin.yy",},},
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},

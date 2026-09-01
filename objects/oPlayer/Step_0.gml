@@ -109,18 +109,25 @@ if (_bioCoin_colision != noone) {
 }	
 
 // -----------------------// -----------------------
+//						OXIGENIO
+// -----------------------// -----------------------
+// Alarm no create
+
+// -----------------------// -----------------------
 //			VICTORY & DEFEAT
 // -----------------------// -----------------------
 // Envia para a tela de resultados (recebe 100% dos ganhos)
-if (qOxygen == 0) {
+if (qOxygen <= 0) {
 		global.return_reason = "oxygen";
 		room_goto(rResults);
+		instance_destroy();
 }
 
 // Envia para a tela de resultaos (Recebe 50% dos ganhos)
 if (hp <= 0) {
 		global.return_reason = "dead";
 		room_goto(rResults);
+		instance_destroy(); // TEMORARIO
 }
 
 

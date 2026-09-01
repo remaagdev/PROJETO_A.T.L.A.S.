@@ -30,3 +30,4 @@ var _text_posY = _posY + 8;
 // Desenha o texto transformando o valor numérico em String (Texto)
 draw_text(_text_posX, _text_posY, string(global.bio_collected));
 
+draw_text(50, 60, qOxygen);

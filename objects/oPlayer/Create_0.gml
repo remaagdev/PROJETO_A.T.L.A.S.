@@ -3,7 +3,7 @@
 // -----------------------// -----------------------
 oxygen = new Stat("Oxigenio do Submarino", 30);																							   		// cilindro de oxigenio, timer de quanto tempo o submarifo fica submerso base
 qOxygen = oxygen.currentValue;																																	// Variavel para armazenar valor de oxigenio atual
-alarm[3] = 1 * game_get_speed(gamespeed_fps);																									// Começa a diminuir a cada segundo a quantia de oxigênio
+alarm[3] = 1 * game_get_speed(gamespeed_fps);																									// Chama o alarm para diminuir a cada segundo a quantia de oxigênio
 
 durability =  new Stat("Durabilidade do Submarino", 100);																								// Durabilidade, pontos de vida base
 hp = durability.currentValue;
@@ -30,7 +30,7 @@ coldownFire = new Stat("Coldown de Disparo", 2);																									// Temp
 
 invencibility = new Stat("Duraçao Invencibilidade", 60);																						// Tempo em que fica invuneravel
 
-colisionDamage = new Stat("Dano de Colisao", 5);																										// Colisao contra paredes
+colisionDamage = new Stat("Dano de Colisao", 50);																										// Colisao contra paredes
 
 fisherLuck = new Stat("Sorte do Pescador", 0.1);																											// SORTE DO PESCADOR
 
