@@ -4,7 +4,7 @@ var _dir = point_direction(x + 16, y, mouse_x, mouse_y);															// Direç
 	
 with(_tiro) {
 	direction = _dir;
-	speed = 10;
+	speed = 12;
 	image_angle = _dir;
 }
 	

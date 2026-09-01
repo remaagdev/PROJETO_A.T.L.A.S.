@@ -81,7 +81,7 @@ if (_shoot_click && can_shooting) {
 	
 	with(_tiro) {
 		direction = _dir;
-		speed = 10;
+		speed = 12;
 		image_angle = _dir;
 	}
 	

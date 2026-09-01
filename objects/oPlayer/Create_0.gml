@@ -21,12 +21,12 @@ shield = new Stat("Armadura do Submarino", 0);																										// Armad
 
 damage = new Stat("Dano do Submarino", 10);																										// Dano por disparo base
 
-cadencyFire = new Stat("Cadencia de tiros do Submarino", 0.5);																			// Tempo de cadencia entre os disparos realizados 
+cadencyFire = new Stat("Cadencia de tiros do Submarino", 0.3);																			// Tempo de cadencia entre os disparos realizados 
 
 bulletFire = new Stat("Quantidade de Tiros", 2);																										// Quantidade de tiros realizados por disparo
 qBullet = 0;																																												// Variavel para ser usada no sistema de disparos, armazena quantos disparos submarino possui
 
-coldownFire = new Stat("Coldown de Disparo", 2);																									// Tempo de coldown entre novos disparos
+coldownFire = new Stat("Coldown de Disparo", 1.5);																									// Tempo de coldown entre novos disparos
 
 invencibility = new Stat("Duraçao Invencibilidade", 60);																						// Tempo em que fica invuneravel
 
