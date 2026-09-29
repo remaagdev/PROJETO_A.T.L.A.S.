@@ -1,4 +1,4 @@
-# Project A.T.L.A.S. (English Version)
+# (English Version)
 
 # Project A.T.L.A.S. #
 
@@ -81,9 +81,9 @@
 
 ---
 
-# Projeto A.T.L.A.S. (Versão em Português)
+# (Versão em Português)
 
-# Working title #
+# Projeto A.T.L.A.S. #
 
 - **Publico Alvo:**
 > O público-alvo do jogo é composto por pessoas a partir de 12 anos que tenham interesse em jogos digitais, especialmente no gênero incremental, e que apreciem mecânicas relacionadas à exploração, descoberta e progressão. 
