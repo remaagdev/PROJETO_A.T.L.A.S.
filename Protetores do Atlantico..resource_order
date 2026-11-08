@@ -38,6 +38,7 @@
     {"name":"bgFundo_3","order":4,"path":"sprites/bgFundo_3/bgFundo_3.yy",},
     {"name":"bgSuperficie_1","order":5,"path":"sprites/bgSuperficie_1/bgSuperficie_1.yy",},
     {"name":"bgSuperficie_2","order":6,"path":"sprites/bgSuperficie_2/bgSuperficie_2.yy",},
+    {"name":"sBackUpgrades","order":2,"path":"sprites/sBackUpgrades/sBackUpgrades.yy",},
     {"name":"sBlock","order":1,"path":"sprites/sBlock/sBlock.yy",},
     {"name":"sBullet","order":2,"path":"sprites/sBullet/sBullet.yy",},
     {"name":"sCanudo_idle","order":5,"path":"sprites/sCanudo_idle/sCanudo_idle.yy",},
@@ -53,7 +54,8 @@
     {"name":"sSubmarino_idle","order":2,"path":"sprites/sSubmarino_idle/sSubmarino_idle.yy",},
     {"name":"sSubmarino_walk","order":1,"path":"sprites/sSubmarino_walk/sSubmarino_walk.yy",},
     {"name":"sTelainicial_idle","order":1,"path":"sprites/sTelainicial_idle/sTelainicial_idle.yy",},
+    {"name":"sTileSetClear","order":2,"path":"sprites/sTileSetClear/sTileSetClear.yy",},
     {"name":"sVida_idle","order":2,"path":"sprites/sVida_idle/sVida_idle.yy",},
-    {"name":"TileSet1","order":1,"path":"tilesets/TileSet1/TileSet1.yy",},
+    {"name":"tileSetDirty","order":1,"path":"tilesets/tileSetDirty/tileSetDirty.yy",},
   ],
 }

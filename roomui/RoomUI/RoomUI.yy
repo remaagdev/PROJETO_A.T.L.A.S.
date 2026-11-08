@@ -29,5 +29,5 @@
           ],"flexDirection":0,"flexWrap":1,"height":{"unit":3,"value":16.0,},"justifyContent":0,"name":"FlexPanel","nodeColour":4286138610,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":64.0,},},
       ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":3,"name":"uiHud","nodeColour":4282952946,"paddingBottom":{"unit":1,"value":10.0,},"paddingLeft":{"unit":1,"value":10.0,},"paddingRight":{"unit":1,"value":10.0,},"paddingTop":{"unit":1,"value":10.0,},"resourceType":"GMRUILayer","resourceVersion":"2.0",},
   ],
-  "visible":true,
+  "visible":false,
 }
