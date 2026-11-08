@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"sSubmarino_morrendo",
+  "%Name":"sSubmarino_destroyed",
   "bboxMode":0,
   "bbox_bottom":46,
   "bbox_left":13,
@@ -18,6 +18,7 @@
     {"$GMSpriteFrame":"v1","%Name":"09a4658c-cacf-4cd4-8f5b-8d53222f0644","name":"09a4658c-cacf-4cd4-8f5b-8d53222f0644","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"98c3cd81-c42c-43a0-acd9-7bebc96eff9e","name":"98c3cd81-c42c-43a0-acd9-7bebc96eff9e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"2cef18b2-4e0d-44b9-b154-719e121be720","name":"2cef18b2-4e0d-44b9-b154-719e121be720","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ffacb558-aea6-49c5-a3ef-edc5552f72bd","name":"ffacb558-aea6-49c5-a3ef-edc5552f72bd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -26,9 +27,9 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"2d0213fa-d33d-46a2-b3ed-987224fe7085","blendMode":0,"displayName":"default","isLocked":false,"name":"2d0213fa-d33d-46a2-b3ed-987224fe7085","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sSubmarino_morrendo",
+  "name":"sSubmarino_destroyed",
   "nineSlice":null,
-  "origin":0,
+  "origin":4,
   "parent":{
     "name":"submarino",
     "path":"folders/sprites/submarino.yy",
@@ -38,7 +39,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"sSubmarino_morrendo",
+    "%Name":"sSubmarino_destroyed",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -54,7 +55,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":6.0,
+    "length":7.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -62,7 +63,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sSubmarino_morrendo",
+    "name":"sSubmarino_destroyed",
     "playback":1,
     "playbackSpeed":6.0,
     "playbackSpeedType":0,
@@ -74,29 +75,32 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6e265cfa-3cb4-4587-a47b-15d1fcffdc16","path":"sprites/sSubmarino_morrendo/sSubmarino_morrendo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6e265cfa-3cb4-4587-a47b-15d1fcffdc16","path":"sprites/sSubmarino_destroyed/sSubmarino_destroyed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"81b068bb-5418-45dd-9440-1029a1d2ea94","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"80423574-1626-4f0e-a4d9-b630f6db45ac","path":"sprites/sSubmarino_morrendo/sSubmarino_morrendo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"80423574-1626-4f0e-a4d9-b630f6db45ac","path":"sprites/sSubmarino_destroyed/sSubmarino_destroyed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"976e9871-e272-4423-9cc3-f89565bba626","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7f0d2719-4922-42f7-a280-d6fd4aa596ef","path":"sprites/sSubmarino_morrendo/sSubmarino_morrendo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7f0d2719-4922-42f7-a280-d6fd4aa596ef","path":"sprites/sSubmarino_destroyed/sSubmarino_destroyed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c5352f28-5aea-4fd0-8411-4894fe10402c","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"09a4658c-cacf-4cd4-8f5b-8d53222f0644","path":"sprites/sSubmarino_morrendo/sSubmarino_morrendo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"09a4658c-cacf-4cd4-8f5b-8d53222f0644","path":"sprites/sSubmarino_destroyed/sSubmarino_destroyed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"5313f790-c269-4d86-81ba-138b6b1af591","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"98c3cd81-c42c-43a0-acd9-7bebc96eff9e","path":"sprites/sSubmarino_morrendo/sSubmarino_morrendo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"98c3cd81-c42c-43a0-acd9-7bebc96eff9e","path":"sprites/sSubmarino_destroyed/sSubmarino_destroyed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"b2aa2e7e-9c45-45cb-9ee0-d870f8feab48","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2cef18b2-4e0d-44b9-b154-719e121be720","path":"sprites/sSubmarino_morrendo/sSubmarino_morrendo.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2cef18b2-4e0d-44b9-b154-719e121be720","path":"sprites/sSubmarino_destroyed/sSubmarino_destroyed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"04df6a80-e11e-4252-959f-85f54c36efca","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ffacb558-aea6-49c5-a3ef-edc5552f72bd","path":"sprites/sSubmarino_destroyed/sSubmarino_destroyed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"29a76b6f-5d3f-43a4-86fa-4db465388241","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":32,
+    "yorigin":32,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

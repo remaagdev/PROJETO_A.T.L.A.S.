@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"codigo_modelo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"codigo_modelo",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

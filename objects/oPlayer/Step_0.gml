@@ -12,7 +12,7 @@ if (_xInput != 0) {
 }
 
 // verifica se ha movimento
-if (_xInput != 0 || _yInput != 0) {
+if (_xInput != 0 || _yInput != 0 && can_move) {
 	// verifica o angulo do movimento
 	var _dir = point_direction(0, 0, _xInput, _yInput);
 	
@@ -22,6 +22,7 @@ if (_xInput != 0 || _yInput != 0) {
 	
 	// troca a sprite do submarino para a de movimento
 	sprite_index = spr_walk;
+	stateCurrent = "walk";
 	
 } else { // Caso NAO haja movimento
 	wSpd = 0;
@@ -29,6 +30,7 @@ if (_xInput != 0 || _yInput != 0) {
 	
 		// troca a sprite do submarino para parada
 	sprite_index = spr_idle;
+	stateCurrent = "idle";
 }
 
 // verifica direção para espelhar a sprite corretamente no eixo Xs
@@ -119,15 +121,26 @@ if (_bioCoin_colision != noone) {
 // Envia para a tela de resultados (recebe 100% dos ganhos)
 if (qOxygen <= 0) {
 		global.return_reason = "oxygen";
-		room_goto(rResults);
-		instance_destroy();
+		stateCurrent = "dead";
+		can_move = false;
+		sprite_index = spr_idle;
+		//room_goto(rResults);
+		//instance_destroy();
 }
 
 // Envia para a tela de resultaos (Recebe 50% dos ganhos)
 if (hp <= 0) {
 		global.return_reason = "dead";
-		room_goto(rResults);
-		instance_destroy(); // TEMORARIO
+		stateCurrent = "dead";
+		can_move = false;
+		sprite_index = spr_destroyed;
+		
+		if (image_index >= image_number - 1){
+            image_index = image_number - 1;
+			image_speed = 0;	
+		}
+		//room_goto(rResults);
+		//instance_destroy(); // TEMORARIO
 }
 
 

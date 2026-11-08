@@ -12,9 +12,11 @@ qBullet--;																																					// Diminui quantia de tiros que p
 	
 // CHECAGEM DE CONTINUIDADE
 if (qBullet > 0) {
+	// SE AINDA TIVER BALAS, ENTRA EM CADENCIA DE DISPAROS
 	// Converte o tempo de cadencia em frames
 	alarm[1] = cadencyFire.currentValue * game_get_speed(gamespeed_fps);
 } else {
+	// SE NÇAO TIVER BALAS, ENTRE EM COLDOWN DE DISPAROS
 	alarm[2] = coldownFire.currentValue * game_get_speed(gamespeed_fps);
 }
 

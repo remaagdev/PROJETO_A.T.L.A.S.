@@ -6,7 +6,7 @@ switch(room) {
 		global.return_reason = "";
 		break;
 		
-		case (rResults):						// Ao entrar na tela de resultados, define multiplicador de bio-coins
+	case (rResults):						// Ao entrar na tela de resultados, define multiplicador de bio-coins
 		var _bio_multi = 1.0;			// Valor cheio
 		if (global.return_reason == "dead"){
 			_bio_multi = 0.5;				// aso tenha morrido, ganhos cortados pela metade

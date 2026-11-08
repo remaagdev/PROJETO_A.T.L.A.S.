@@ -1,14 +1,14 @@
 // -----------------------// -----------------------
 //				 STATUS FISICOS
 // -----------------------// -----------------------
-oxygen = new Stat("Oxigenio do Submarino", 5);																							   		// cilindro de oxigenio, timer de quanto tempo o submarifo fica submerso base
+oxygen = new Stat("Oxigenio do Submarino", 35);																							   		// cilindro de oxigenio, timer de quanto tempo o submarifo fica submerso base
 qOxygen = oxygen.currentValue;																																	// Variavel para armazenar valor de oxigenio atual
 alarm[3] = 1 * game_get_speed(gamespeed_fps);																									// Chama o alarm para diminuir a cada segundo a quantia de oxigênio
 
 durability =  new Stat("Durabilidade do Submarino", 100);																								// Durabilidade, pontos de vida base
 hp = durability.currentValue;
 
-velocity = new Stat ("Velocidade do Subimarino", 3);																								// Velocidade de navegaçao por segundo base
+velocity = new Stat ("Velocidade do Subimarino", 2);																								// Velocidade de navegaçao por segundo base
 hSpd =  0;
 wSpd = 0;
 
@@ -37,13 +37,17 @@ fisherLuck = new Stat("Sorte do Pescador", 0.1);																											// SO
 // -----------------------// -----------------------
 //						GETTERS
 // -----------------------// -----------------------
-is_vunerable = true;																																								// True = Objeto está sucetivel a receber dano																					
-can_shooting = true;																																							// True = Objeto pode atirar
-is_cadency = true;																																									// Ture = Objeto tem cadencia para disparar projetil
-is_coldown = false;																																								// False = Não está em coldown para disparar
+is_vunerable	= true;								// SE PODE SER ATINGIDO																																					// True = Objeto está sucetivel a receber dano																					
+can_shooting	= true;								// SE CONSEGUE ATIRAR																										// True = Objeto pode atirar
+//is_cadency		= true;								// 																															// Ture = Objeto tem cadencia para disparar projetil
+is_coldown		= false;							// SE ESTÁ EM COLDOWN PARA DISPARAR
+can_move		= true;								// SE CONSEGUE SE MOVER
+// adicionar variavel para saber se ele pode se mover																																							// False = Não está em coldown para disparar
 
 // -----------------------// -----------------------
 //						SPRITE STATES
 // -----------------------// -----------------------
+stateCurrent = "idle";
 spr_idle = sSubmarino_idle;
 spr_walk = sSubmarino_walk;
+spr_destroyed = sSubmarino_destroyed;

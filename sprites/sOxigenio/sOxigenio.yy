@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"hud",
-    "path":"folders/sprites/hud.yy",
+    "path":"folders/UI UX/hud.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

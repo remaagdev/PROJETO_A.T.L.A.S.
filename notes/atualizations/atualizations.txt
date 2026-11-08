@@ -1,3 +1,9 @@
+EM ANDAMENTO:
+TRANSIÇÃO DE TELAS GERENCIADO POR UM OBJETO PROPRIO
+TESTES SENDO FEITOS NO OCONTROLLER
+** TRANSFORMAR CHECAGEM DE CADENCIA E COLDOWN DOS DISPAROS EM FUNÇÃO PARA SER CHAMADA
+>> ATUALMENTE FINALIZANDO INIMIGOS
+
 0. Loop Gameplay
 	0.1 - Tela de Derrota; Ao ter sua durabilidade reduzida a 0 - 
 	0.2 - Retorna a tela padrao; Ao ter seu tempo de oxigenio reduzido a 0 -
