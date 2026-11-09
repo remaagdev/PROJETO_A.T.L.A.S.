@@ -20,7 +20,7 @@ if (keyboard_check_pressed(vk_escape)) {
     game_end();
 }
 
-if (keyboard_check_pressed(ord"P") && stateGame == "running"){
+if (keyboard_check_pressed(ord("P")) && stateGame == "running"){
 	stateGame = "paused";
 } else {
 	stateGame = "running";
@@ -35,7 +35,16 @@ switch (stateGame) {
 		instance_deactivate_layer("Instances");
 		break;
 
-	case default:
+	case "default":
 		instance_activate_layer("Instances");
 		break;
 }
+var _bio_multi = 1.0;			// Valor cheio
+		if (global.return_reason == "dead"){
+			_bio_multi = 0.5;				// aso tenha morrido, ganhos cortados pela metade
+		
+		}
+		
+		// Calcula valor e deposita ele na carteira
+		bio_current = global.bio_collected * _bio_multi;
+		global.bio_wallet += bio_current;

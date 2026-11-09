@@ -7,3 +7,15 @@ global variable name 'bio_final' index (100033) not set before reading it.
  at gml_Object_oController_Draw_64 (line 23) -     draw_text(_centro_tela, 250, "Total Ganho (com taxas): $" + string(global.bio_final));
 ############################################################################################
 gml_Object_oController_Draw_64 (line 23)
+
+
+ERROR!!! :: ############################################################################################
+ERROR in action number 1
+of Draw Event for object oController:
+Variable oController.bio_current(100049, -2147483648) not set before reading it.
+ at gml_Script_boxResults@gml_Object_oController_Draw_64 (line 87) -     draw_text(_centerX, _y1 + (p * 4), "Total Ganho (com taxas): $" + string(bio_current));
+############################################################################################
+gml_Script_boxResults@gml_Object_oController_Draw_64 (line 87)
+gml_Object_oController_Draw_64 (line 38) -             boxResults();
+
+Script_Free called with 13 and global 5
