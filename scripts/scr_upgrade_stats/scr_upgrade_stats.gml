@@ -26,7 +26,8 @@ function Stat(_name, _base) constructor {
 				if (_up.lvlUp < _up.lvlUp_limit) {
 					_up.lvlUp++;													// Aumenta o nivel do upgrade
 					statusCurrentValue();								// atualiza o status current do upgrade
-				}
+				    show_debug_message("upgrade feito!");
+                }
 		}
 	}
 	

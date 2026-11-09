@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Upgrades","folderPath":"folders/objects/Upgrades.yy","name":"Upgrades","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms","folderPath":"folders/rooms.yy","name":"rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"scripts","folderPath":"folders/scripts.yy","name":"scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"sprites","folderPath":"folders/sprites.yy","name":"sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -50,6 +51,7 @@
     {"id":{"name":"oGarrafa","path":"objects/oGarrafa/oGarrafa.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oSaguaViva","path":"objects/oSaguaViva/oSaguaViva.yy",},},
+    {"id":{"name":"oUpDurability","path":"objects/oUpDurability/oUpDurability.yy",},},
     {"id":{"name":"rGame","path":"rooms/rGame/rGame.yy",},},
     {"id":{"name":"rResults","path":"rooms/rResults/rResults.yy",},},
     {"id":{"name":"rUpgrades","path":"rooms/rUpgrades/rUpgrades.yy",},},
@@ -89,6 +91,7 @@
     {"id":{"name":"sTileSetClear_1","path":"sprites/sTileSetClear_1/sTileSetClear_1.yy",},},
     {"id":{"name":"sTileSetClear","path":"sprites/sTileSetClear/sTileSetClear.yy",},},
     {"id":{"name":"sTileSetDirty","path":"sprites/sTileSetDirty/sTileSetDirty.yy",},},
+    {"id":{"name":"sUpDurability","path":"sprites/sUpDurability/sUpDurability.yy",},},
     {"id":{"name":"sUpgrades_idle","path":"sprites/sUpgrades_idle/sUpgrades_idle.yy",},},
     {"id":{"name":"sVida_idle","path":"sprites/sVida_idle/sVida_idle.yy",},},
     {"id":{"name":"tileSetDirty","path":"tilesets/tileSetDirty/tileSetDirty.yy",},},

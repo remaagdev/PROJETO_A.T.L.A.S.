@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"Upgrades","order":10,"path":"folders/objects/Upgrades.yy",},
     {"name":"rooms","order":3,"path":"folders/rooms.yy",},
     {"name":"scripts","order":2,"path":"folders/scripts.yy",},
     {"name":"sprites","order":1,"path":"folders/sprites.yy",},
@@ -58,6 +59,7 @@
     {"name":"sTelainicial_idle","order":1,"path":"sprites/sTelainicial_idle/sTelainicial_idle.yy",},
     {"name":"sTileSetClear_1","order":3,"path":"sprites/sTileSetClear_1/sTileSetClear_1.yy",},
     {"name":"sTileSetClear","order":4,"path":"sprites/sTileSetClear/sTileSetClear.yy",},
+    {"name":"sUpDurability","order":1,"path":"sprites/sUpDurability/sUpDurability.yy",},
     {"name":"sVida_idle","order":2,"path":"sprites/sVida_idle/sVida_idle.yy",},
     {"name":"tileSetDirty","order":1,"path":"tilesets/tileSetDirty/tileSetDirty.yy",},
   ],
