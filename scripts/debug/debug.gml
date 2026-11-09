@@ -31,5 +31,34 @@ if (keyboard_check(vk_anykey)) {
     );
 
 >> EVENTO SE O BOTÃO FOR CLICADO
-    make_upgrade (idUpgrade);
+    make_upgrade(idUpgrade);
     
+
+////////////////////////
+// HUD FUNCIONAL
+>> BARRA DE DURABILIDADE DO SUBMARINO
+    var _hp = oPlayer.hp;
+    var _hpMax = oPlayer.durability.currentValue;
+    var _barSize = 100;
+
+    // dividir o tamanho total da vida em 10, e fazer com q o tamanho dela seja proporcional a vida atual
+    var _porcent = clamp(_hp / _hpMax, 0, 1);
+
+    // tamanho preenchido
+    var _hpWidth = _barSize * _porcent;
+
+
+>> EVENT DRAW GUI
+draw_retangule(100, 100, 100 + _hpWidth, 120, false);
+draw_sprite(sVida_idle);
+
+//////////////
+// TELA FULL SCREEN 
+>> EVENTO STEP OCONTROLER
+    if (keyboard_check(vk_f11)) {
+    window_set_fullscreen(!window_get_fullscreen());
+    }
+
+    if (keyboard_check(vk_scape)) {
+        game_end();
+    }
