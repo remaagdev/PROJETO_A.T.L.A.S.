@@ -30,7 +30,7 @@ coldownFire = new Stat("Coldown de Disparo", 1.5);																									// Te
 
 invencibility = new Stat("Duraçao Invencibilidade", 60);																						// Tempo em que fica invuneravel
 
-colisionDamage = new Stat("Dano de Colisao", 50);																										// Colisao contra paredes
+colisionDamage = new Stat("Dano de Colisao", 10);																										// Colisao contra paredes
 
 fisherLuck = new Stat("Sorte do Pescador", 0.1);																											// SORTE DO PESCADOR
 

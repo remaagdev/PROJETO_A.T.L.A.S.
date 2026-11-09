@@ -39,12 +39,12 @@ if (_xInput != 0) {
 }
 
 // aplica colisão horizontal contra objetos oCharachter
-if (place_meeting(x + wSpd, y, oBlock)) {
+if (place_meeting(x + wSpd, y, [oBlock, global.tile_colision])) {
 	// Ao esbarrar nas paredes, recebe dano
 	apply_damage(colisionDamage.currentValue, id);
 	
 	// enquanto NÂO houver parede a 1 pxl de distancia na diração
-	while (!place_meeting(x + sign(wSpd), y, oBlock)){
+	while (!place_meeting(x + sign(wSpd), y, [oBlock, global.tile_colision])){
 		x += sign(wSpd);
 	}
 	wSpd = 0;
@@ -54,12 +54,12 @@ if (place_meeting(x + wSpd, y, oBlock)) {
 x += wSpd;
 
 // aplica colisão vertical contra objetos oCharachter
-if (place_meeting(x, y + hSpd, oBlock)) {
+if (place_meeting(x, y + hSpd, [oBlock, global.tile_colision])) {
 	// Ao esbarrar nas paredes, recebe dano
 	apply_damage(colisionDamage.currentValue, id);
 	
 	// enquanto NÂO houver parede a 1 pxl de distancia na diração
-	while (!place_meeting(x, y + sign(hSpd), oBlock)){
+	while (!place_meeting(x, y + sign(hSpd), [oBlock, global.tile_colision])){
 		y += sign(hSpd);
 	}
 	hSpd = 0;

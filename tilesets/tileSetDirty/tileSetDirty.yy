@@ -1,14 +1,17 @@
 {
   "$GMTileSet":"v1",
   "%Name":"tileSetDirty",
-  "autoTileSets":[],
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"terreno","closed_edge":false,"name":"terreno","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[3,12,14,13,0,8,0,4,0,0,10,6,17,16,18,0,],},
+    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[3,12,14,13,1,8,0,4,2,0,10,6,17,16,18,0,],},
+  ],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
   "name":"tileSetDirty",
-  "out_columns":6,
+  "out_columns":4,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +21,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sTileSetDirty",
-    "path":"sprites/sTileSetDirty/sTileSetDirty.yy",
+    "name":"sTileSetClear",
+    "path":"sprites/sTileSetClear/sTileSetClear.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +37,5 @@
   "tileWidth":32,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":42,
+  "tile_count":20,
 }

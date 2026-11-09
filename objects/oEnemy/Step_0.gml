@@ -1,3 +1,6 @@
+// VARIAVEIS DE MOVIMENTO
+var _wSpd = 0;
+var _hSpd = 0;
 // CRIANDO IA BASICA DE MOVIMENTO
 if (!player_detected && can_move){
     move_time--;
@@ -8,7 +11,7 @@ if (!player_detected && can_move){
     }
 
     if (move_dir != 0) {
-        x += move_dir * (velocity * .6); // Se move devagar enquanto n está em perseguição
+        _wSpd = move_dir * (velocity * .6); // Se move devagar enquanto n está em perseguição
     }
 }
 
@@ -22,13 +25,14 @@ if (instance_exists(oPlayer)) {
         player_detected = false;
     }
     
-    if (player_detected){
+    if (player_detected && can_move){
         // DESCOBRE DIREÇÃO ATÉ O PLAYER
         var _dir = point_direction(x, y, oPlayer.x, oPlayer.y);
         
         // SE MOVE EM DIREÇÃO AO PLAYER COM VETORES NORMALIZADOS
-        x += lengthdir_x(velocity, _dir);
-        y += lengthdir_y(velocity, _dir);
+        _wSpd = lengthdir_x(velocity, _dir);
+        _hSpd = lengthdir_y(velocity, _dir);
+        
         
         // TROCA DIREÇÃO DA IMAGEM APATIR DA DIFERENÇA ENTRE A POSIÇÃO DO INIMIGO E DO PLAYER
         if (oPlayer.x != x) {
@@ -37,7 +41,8 @@ if (instance_exists(oPlayer)) {
     }
 }
 
-// criar variavel que checa veracidade, quando n for mais verdade volta comportamento normal
+// CHECANDO COLISÃO
+colisionBlock(_wSpd, _hSpd, false, 0);
 
 // checar colisão para dar dano no submarino
 var _player_colision = instance_place(x, y, oPlayer);
@@ -48,7 +53,7 @@ if (_player_colision != noone) {
 }
 
 
-if (hp <=  0){
+if (hp <= 0){
 	can_move = false;
     sprite_index = spr_dead;
 		
