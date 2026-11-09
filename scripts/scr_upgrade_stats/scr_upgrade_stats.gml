@@ -1,5 +1,6 @@
 // Structs/ Constructs para criar upgrades
-function Upgrade(_nameUp, _lvlUp_limit, _multiUp) constructor {
+function Upgrade(_idUp, _nameUp, _lvlUp_limit, _multiUp) constructor {
+		idUp = _idUp;
 		nameUp = _nameUp;											// Nome do upgrade
 		lvlUp = 0;																	// Nivel do upgrade
 		lvlUp_limit = _lvlUp_limit;									// Limite de nivel do upgrade
@@ -37,6 +38,6 @@ function Stat(_name, _base) constructor {
 			_totalBonus += baseValue * (upgradesList[i].lvlUp * upgradesList[i].multiUp);
 		}
 		
-		currentValue = baseValue + totalBonus;
+		currentValue = baseValue + _totalBonus;
 	}
 }
