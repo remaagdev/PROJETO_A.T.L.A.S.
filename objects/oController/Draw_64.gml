@@ -3,16 +3,45 @@ if (instance_exists(oPlayer)) {
     var _state = oPlayer.stateCurrent;
 
     switch(_state){
+        case "running":         // HUD
+            var _hp = oPlayer.hp;
+            var _hpMax = oPlayer.durability.currentValue;
+            var _barSize = 100;
+            var _porcent = 0;
+
+            if (_hpMax > 0) {
+                // dividir o tamanho total da vida em 10, e fazer com q o tamanho dela seja proporcional a vida atual
+                _porcent = clamp(_hp / _hpMax, 0, 1);
+            }
+
+            // tamanho preenchido
+            var _hpWidth = _barSize * _porcent;
+
+            draw_set_color(c_black);
+            draw_rectangle(100, 100, 100 + _barSize, 120, false);
+
+            draw_set_color(c_lime);
+            draw_rectangle(100, 100, 100 + _hpWidth, 120, false);
+            //draw_sprite(sVida_idle);
+        break;
+
+        case "paused":
+            draw_set_halign(fa_center);
+            draw_set_valing(fa_middle);
+            draw_text(display_get_gui_width() / 2, display_get_gui_height() / 2, "PAUSED");
+
+            draw_set_halign(fa_left);
+            draw_set_valign(fa_top);
+        break;
+        
         case "returning":
             boxResults();
-            break;
+        break;
         
         case "destroyed":
             boxResults();
-            break;
+        break;
     }
-    
-    // HUD
     
     // PAUSE
 }
