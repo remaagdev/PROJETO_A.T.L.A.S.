@@ -23,7 +23,3 @@ if (keyboard_check(vk_anykey)) {
 >> EVENT DRAW GUI
 draw_retangule(100, 100, 100 + _hpWidth, 120, false);
 draw_sprite(sVida_idle);
-
-//////////////
-// TELA FULL SCREEN 
->> EVENTO STEP OCONTROLER

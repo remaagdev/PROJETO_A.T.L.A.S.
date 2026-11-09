@@ -121,7 +121,7 @@ if (_bioCoin_colision != noone) {
 // Envia para a tela de resultados (recebe 100% dos ganhos)
 if (qOxygen <= 0) {
 		global.return_reason = "oxygen";
-		stateCurrent = "dead";
+		stateCurrent = "returning";
 		can_move = false;
 		sprite_index = spr_idle;
 		//room_goto(rResults);
@@ -131,7 +131,7 @@ if (qOxygen <= 0) {
 // Envia para a tela de resultaos (Recebe 50% dos ganhos)
 if (hp <= 0) {
 		global.return_reason = "dead";
-		stateCurrent = "dead";
+		stateCurrent = "destroyed";
 		can_move = false;
 		sprite_index = spr_destroyed;
 		
