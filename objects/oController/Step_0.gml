@@ -11,7 +11,7 @@ if (keyboard_check_pressed(ord("U"))) {
 }
 
 // Fullscreen
-if (keyboard_check(vk_f11)) {
+if (keyboard_check_pressed(vk_f11)) {
 window_set_fullscreen(!window_get_fullscreen());
 }
 

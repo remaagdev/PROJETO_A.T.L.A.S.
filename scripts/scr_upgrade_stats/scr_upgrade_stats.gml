@@ -1,11 +1,11 @@
 // Structs/ Constructs para criar upgrades
-function Upgrade(_idUp, _nameUp, _lvlUp_limit, _multiUp) constructor {
+function Upgrade(_idUp, _nameUp, _lvlUp_limit, _multiUp, _costUp) constructor {
 		idUp = _idUp;
 		nameUp = _nameUp;											// Nome do upgrade
 		lvlUp = 0;																	// Nivel do upgrade
 		lvlUp_limit = _lvlUp_limit;									// Limite de nivel do upgrade
 		multiUp = _multiUp;												// O quanto aumenta ao subir de nivel um upgrade
-		
+		costUp = _costUp;
 }
 
 // Structs/ Constructs para criar status
@@ -23,11 +23,16 @@ function Stat(_name, _base) constructor {
 				var _up = upgradesList[upgrade_index];									// atalho para minimizar linhas de cod
 				
 				// segurança:  Realiza o upgrade se o nivel dele for menor que o limite
-				if (_up.lvlUp < _up.lvlUp_limit) {
+				if (_up.lvlUp < _up.lvlUp_limit && _up.costUp <= global.bio_wallet) {
 					_up.lvlUp++;													// Aumenta o nivel do upgrade
 					statusCurrentValue();								// atualiza o status current do upgrade
-				    show_debug_message("upgrade feito!");
-                }
+				    
+					global.bio_wallet -= _up.costUp;
+					_up.costUp = ceil(_up.costUp * 1.2);				// Aredonda para cima valor de custo
+					return true;
+                } else {
+					return false;
+				}
 		}
 	}
 	
