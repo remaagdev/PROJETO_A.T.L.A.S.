@@ -1,4 +1,18 @@
 /// @Description DRAW GUI HUD E TELA DE RESULTADOS
+draw_set_color(c_white);
+
+draw_text(20, 20,
+    "GUI: " +
+    string(display_get_gui_width()) + " x " +
+    string(display_get_gui_height())
+);
+
+draw_text(20, 50,
+    "DISPLAY: " +
+    string(display_get_width()) + " x " +
+    string(display_get_height())
+);
+
 if (instance_exists(oPlayer)) {
     var _state = oPlayer.stateCurrent;
 

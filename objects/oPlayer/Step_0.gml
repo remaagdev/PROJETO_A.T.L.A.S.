@@ -3,8 +3,18 @@
 // -----------------------// -----------------------
 // Inputs para identificar a direçao em que o player quer se locomover
 // outputs = 1, 0, -1
-var _xInput = keyboard_check(ord("D"))  - keyboard_check(ord("A"));
-var _yInput = keyboard_check(ord("S"))  - keyboard_check(ord("W"));
+var _xInput = (keyboard_check(ord("D")) or keyboard_check(vk_right))  - (keyboard_check(ord("A")) or keyboard_check(vk_left));
+var _yInput = (keyboard_check(ord("S")) or keyboard_check(vk_down))  - (keyboard_check(ord("W")) or keyboard_check(vk_up));
+
+if (MOBILE_BUILD && instance_exists(oJoystick)) {
+    var _mobile = instance_find(oJoystick, 0);
+
+    _xInput += _mobile.joy_x;
+    _yInput += _mobile.joy_y;
+}
+
+_xInput = clamp(_xInput, -1, 1);
+_yInput = clamp(_yInput, -1, 1);
 
 // veriica sinal do xinput para espelhamento correto
 if (_xInput != 0) {
@@ -12,7 +22,7 @@ if (_xInput != 0) {
 }
 
 // verifica se ha movimento
-if (_xInput != 0 || _yInput != 0 && can_move) {
+if ((_xInput != 0 || _yInput != 0) && can_move) {
 	// verifica o angulo do movimento
 	var _dir = point_direction(0, 0, _xInput, _yInput);
 	
@@ -71,15 +81,50 @@ y += hSpd;
 // -----------------------// -----------------------
 //						DISPAROS
 // -----------------------// -----------------------
-var _shoot_click = mouse_check_button_pressed(mb_left);															// Detecta o click do mouse
+// -----------------------
+// DISPAROS
+// -----------------------
+
+// Posição da mira
+var _aim_x;
+var _aim_y;
+
+// Input de disparo
+var _shoot_click = false;
+
+// --------------------------------
+// CONTROLES PC
+// --------------------------------
+if (!MOBILE_BUILD) {
+
+    // Mouse controla mira e disparo
+    _shoot_click = mouse_check_button_pressed(mb_left);
+
+    _aim_x = mouse_x;
+    _aim_y = mouse_y;
+}
+
+// --------------------------------
+// CONTROLES MOBILE
+// --------------------------------
+else if (instance_exists(oJoystick)) {
+
+    var _mobile = instance_find(oJoystick, 0);
+
+    // Touch controla mira e disparo
+    _shoot_click = _mobile.mobile_shoot;
+
+    _aim_x = _mobile.mobile_aim_x;
+    _aim_y = _mobile.mobile_aim_y;
+}														// Detecta o click do mouse
 
 // Verifica se o player clicou e se pode atirar para realizar os disparos
 if (_shoot_click && can_shooting) {
 	can_shooting = false;
-	
+    
 	qBullet = bulletFire.currentValue;																								// Pega inamicamente a quantia de balas
 	var _tiro = instance_create_layer(x, y, "Instances", oBullet);														// Cria a instancia do tiro
-	var _dir = point_direction(x + 16, y, mouse_x, mouse_y);															// Direção do mouse 
+	var _dir = point_direction(x + 16, y, _aim_x, _aim_y);															// Direção do mouse 
 	
 	with(_tiro) {
 		direction = _dir;
@@ -123,6 +168,7 @@ if (qOxygen <= 0) {
 		global.return_reason = "oxygen";
 		stateCurrent = "returning";
 		can_move = false;
+        can_shooting = false;
 		sprite_index = spr_idle;
 		//room_goto(rResults);
 		//instance_destroy();
@@ -133,6 +179,7 @@ if (hp <= 0) {
 		global.return_reason = "dead";
 		stateCurrent = "destroyed";
 		can_move = false;
+        can_shooting = false;
 		sprite_index = spr_destroyed;
 		
 		if (image_index >= image_number - 1){
