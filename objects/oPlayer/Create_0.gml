@@ -5,7 +5,7 @@ oxygen = new Stat("Oxigenio do Submarino", 35);																							   		// ci
 qOxygen = oxygen.currentValue;																																	// Variavel para armazenar valor de oxigenio atual
 alarm[3] = 1 * game_get_speed(gamespeed_fps);																									// Chama o alarm para diminuir a cada segundo a quantia de oxigênio
 
-durability =  new Stat("Durabilidade do Submarino", 100);																								// Durabilidade, pontos de vida base
+durability =  new Stat("Durabilidade do Submarino", 35);																								// Durabilidade, pontos de vida base
 hp = durability.currentValue;
 
 velocity = new Stat ("Velocidade do Subimarino", 2);																								// Velocidade de navegaçao por segundo base
@@ -19,11 +19,11 @@ resistPresurre = new Stat("Resistencia a Pressao do Submarino", 763);											
 // -----------------------// -----------------------
 shield = new Stat("Armadura do Submarino", 0);																										// Armadura do submarino
 
-damage = new Stat("Dano do Submarino", 10);																										// Dano por disparo base
+damage = new Stat("Dano do Submarino", 2);																								// Dano por disparo base
 
 cadencyFire = new Stat("Cadencia de tiros do Submarino", 0.3);																			// Tempo de cadencia entre os disparos realizados 
 
-bulletFire = new Stat("Quantidade de Tiros", 2);																										// Quantidade de tiros realizados por disparo
+bulletFire = new Stat("Quantidade de Tiros", 1);																										// Quantidade de tiros realizados por disparo
 qBullet = 0;																																												// Variavel para ser usada no sistema de disparos, armazena quantos disparos submarino possui
 
 coldownFire = new Stat("Coldown de Disparo", 1.5);																									// Tempo de coldown entre novos disparos

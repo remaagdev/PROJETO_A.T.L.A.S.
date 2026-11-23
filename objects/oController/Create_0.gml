@@ -4,6 +4,8 @@ global.return_reason = "";  												// Getter para saber se o retorno do per
 global.tile_colision = layer_tilemap_get_id("terreno");
 stateGame = "running";
 
+startMenuList = ["Jogar", "Sair"];
+
 if (MOBILE_BUILD) {
     instance_create_layer(0, 0, "Instances", oJoystick);
 }
