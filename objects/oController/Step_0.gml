@@ -1,7 +1,11 @@
+if (MOBILE_BUILD) {
+instance_create_layer(0, 0, "Instances", oJoystick);
+    
 // resetar room
 if (keyboard_check_pressed(ord("R"))) {
 	room_goto(rGame);	
 	stateGame = "running";
+}
 }
 
 // resetar room
@@ -39,12 +43,30 @@ switch (stateGame) {
 		instance_activate_layer("Instances");
 		break;
 }
+
+var _hpCurrent = 1;
+var _oxCurrent = 1;
+
+// mudando de stateGame
+if (instance_exists(oPlayer)) {
+    _hpCurrent = oPlayer.hp;
+    _oxCurrent = oPlayer.qOxygen;
+}
+
+
+if (_hpCurrent <= 0){
+    stateGame = "destroyed";
+}
+
+if (_oxCurrent <= 0){
+    stateGame = "returning";
+}
 var _bio_multi = 1.0;			// Valor cheio
-		if (global.return_reason == "dead"){
-			_bio_multi = 0.5;				// aso tenha morrido, ganhos cortados pela metade
+if (global.return_reason == "dead"){
+    _bio_multi = 0.5;				// aso tenha morrido, ganhos cortados pela metade
+
+}
 		
-		}
-		
-		// Calcula valor e deposita ele na carteira
-		bio_current = global.bio_collected * _bio_multi;
-		global.bio_wallet += bio_current;
+// Calcula valor e deposita ele na carteira
+bio_current = global.bio_collected * _bio_multi;
+global.bio_wallet += bio_current;

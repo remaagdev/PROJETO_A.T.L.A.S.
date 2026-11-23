@@ -19,7 +19,7 @@ resistPresurre = new Stat("Resistencia a Pressao do Submarino", 763);											
 // -----------------------// -----------------------
 shield = new Stat("Armadura do Submarino", 0);																										// Armadura do submarino
 
-damage = new Stat("Dano do Submarino", 2);																								// Dano por disparo base
+damage = new Stat("Dano do Submarino", 3);																								// Dano por disparo base
 
 cadencyFire = new Stat("Cadencia de tiros do Submarino", 0.3);																			// Tempo de cadencia entre os disparos realizados 
 

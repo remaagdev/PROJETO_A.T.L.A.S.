@@ -8,7 +8,6 @@
   "instanceCreationOrder":[
     {"name":"inst_6B180456","path":"rooms/rGame/rGame.yy",},
     {"name":"inst_48757178","path":"rooms/rGame/rGame.yy",},
-    {"name":"inst_349C1313","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_5E7D15B6","path":"rooms/rGame/rGame.yy",},
     {"name":"inst_35CBF63","path":"rooms/rGame/rGame.yy",},
     {"name":"inst_688FC8AF","path":"rooms/rGame/rGame.yy",},

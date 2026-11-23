@@ -35,8 +35,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"telas",
-    "path":"folders/sprites/telas.yy",
+    "name":"parallax",
+    "path":"folders/sprites/parallax.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

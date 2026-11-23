@@ -25,3 +25,4 @@ var _camWidth = _camHeight * _aspect;
 
 // Atualiza a câmera
 camera_set_view_size(view_camera[0], _camWidth, _camHeight);
+

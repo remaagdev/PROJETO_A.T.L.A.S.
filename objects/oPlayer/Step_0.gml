@@ -169,6 +169,7 @@ if (qOxygen <= 0) {
 		stateCurrent = "returning";
 		can_move = false;
         can_shooting = false;
+        is_vunerable = false;
 		sprite_index = spr_idle;
 		//room_goto(rResults);
 		//instance_destroy();
@@ -180,6 +181,7 @@ if (hp <= 0) {
 		stateCurrent = "destroyed";
 		can_move = false;
         can_shooting = false;
+        is_vunerable = false;
 		sprite_index = spr_destroyed;
 		
 		if (image_index >= image_number - 1){

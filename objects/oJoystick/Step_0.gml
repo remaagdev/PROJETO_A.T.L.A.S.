@@ -109,14 +109,6 @@ for (var i = 0; i <= 4; i++) {
 for (var i = 0; i <= 4; i++) {
     var _pressed = device_mouse_check_button(i, mb_left);
 
-    show_debug_message(
-    "ID 0: " + string(device_mouse_check_button(0, mb_left)) +
-    " | ID 1: " + string(device_mouse_check_button(1, mb_left)) +
-    " | ID 2: " + string(device_mouse_check_button(2, mb_left)) +
-    " | ID 3: " + string(device_mouse_check_button(3, mb_left)) +
-    " | ID 4: " + string(device_mouse_check_button(4, mb_left))
-);
-
     if (joy_active && i == joy_touch) {
         continue;
     }

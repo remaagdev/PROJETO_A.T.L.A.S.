@@ -1,18 +1,6 @@
 /// @Description DRAW GUI HUD E TELA DE RESULTADOS
 draw_set_color(c_white);
 
-draw_text(20, 20,
-    "GUI: " +
-    string(display_get_gui_width()) + " x " +
-    string(display_get_gui_height())
-);
-
-draw_text(20, 50,
-    "DISPLAY: " +
-    string(display_get_width()) + " x " +
-    string(display_get_height())
-);
-
 if (instance_exists(oPlayer)) {
 
     switch(stateGame){
@@ -43,9 +31,11 @@ if (instance_exists(oPlayer)) {
             }
             draw_rectangle(100, 100, 100 + _hpWidth, 120, false);
             
-            draw_set_color(c_black);
-            draw_sprite_ext(sBioCoin, image_index, 100, 130, 1, 1, 0, c_white, 1);
-            draw_text_transformed(130, 130, global.bio_collected);
+            draw_set_color(c_white);
+            draw_sprite_ext(sBioCoin, image_index, 100, 130, 2, 2, 0, c_white, 1);
+            draw_text_transformed(130, 150, global.bio_collected, 2, 2, 0);
+            //draw_sprite_ext(sOxigenio, image_index, 200, 13, 1, 1, 0, c_white, 1);
+            draw_text_transformed(100, 180, "Ox: " + string(oPlayer.qOxygen), 2, 2, 0);
         break;
 
         case "paused":
@@ -147,7 +137,7 @@ function boxResults() {
     draw_text_transformed(_centerX, _btn2Y1 + (_btnH / 2), "MENU INICIAL", 1.8, 1.8, 0);
 
     if (_hover2 && _click) {
-        room_goto(rm_menu); // <-- TROQUE PELO NOME DA SUA ROOM DE MENU
+        room_goto(rStartMenu); // <-- TROQUE PELO NOME DA SUA ROOM DE MENU
     }
 
     // Reseta alinhamentos e cores padrão
